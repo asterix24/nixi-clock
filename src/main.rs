@@ -15,13 +15,20 @@ use embassy_rp::gpio::{Level, Output};
 use embassy_rp::peripherals::{DMA_CH0, PIO0};
 use embassy_rp::pio::{InterruptHandler, Pio};
 use embassy_rp::{bind_interrupts, dma};
-use embassy_time::Duration;
+use embassy_sync::{blocking_mutex::raw::CriticalSectionRawMutex, channel::Channel};
 use embedded_io_async::Write;
 use static_cell::StaticCell;
+
+use heapless::{String, Vec};
+
+type NetStack = embassy_net::Stack<'static>;
+type NetControl = cyw43::Control<'static>;
 
 // defmt Logging
 use defmt::*;
 use {defmt_rtt as _, panic_probe as _};
+
+use nixi_clock::proto_parser::{ParserMgr, reply_err, reply_ok};
 
 bind_interrupts!(struct Irqs {
     PIO0_IRQ_0 => InterruptHandler<PIO0>;
@@ -30,6 +37,9 @@ bind_interrupts!(struct Irqs {
 
 const WIFI_NETWORK: &str = env!("SSID");
 const WIFI_PASSWORD: &str = env!("PASSWORD");
+
+static PROTO_PARSE: Channel<CriticalSectionRawMutex, String<128>, 2> = Channel::new();
+static PROTO_RET: Channel<CriticalSectionRawMutex, String<64>, 2> = Channel::new();
 
 #[embassy_executor::task]
 async fn cyw43_task(
@@ -41,6 +51,71 @@ async fn cyw43_task(
 #[embassy_executor::task]
 async fn net_task(mut runner: embassy_net::Runner<'static, cyw43::NetDriver<'static>>) -> ! {
     runner.run().await
+}
+
+#[embassy_executor::task]
+async fn connection_task(stack: &'static NetStack, mut control: NetControl) -> ! {
+    loop {
+        if !stack.is_link_up() {
+            while let Err(err) = control
+                .join(WIFI_NETWORK, JoinOptions::new(WIFI_PASSWORD.as_bytes()))
+                .await
+            {
+                info!("join failed: {:?}", err);
+            }
+            info!("waiting for link...");
+            stack.wait_link_up().await;
+
+            info!("waiting for DHCP...");
+            stack.wait_config_up().await;
+
+            // And now we can use it!
+            info!("Stack is up!");
+            control.gpio_set(1, false).await;
+        }
+        embassy_time::Timer::after_secs(5).await;
+    }
+}
+
+#[embassy_executor::task]
+async fn shell_task(stack: &'static NetStack) -> ! {
+    let mut rx_buffer = [0; 4096];
+    let mut tx_buffer = [0; 4096];
+    let mut tmp_buffer = [0; 4096];
+
+    loop {
+        let mut socket = TcpSocket::new(*stack, &mut rx_buffer, &mut tx_buffer);
+        socket.set_timeout(Some(embassy_time::Duration::from_secs(60)));
+        if let Err(e) = socket.accept(20000).await {
+            println!("accept error: {:?}", e);
+            continue;
+        }
+        loop {
+            let n = match socket.read(&mut tmp_buffer).await {
+                Ok(0) => {
+                    println!("read EOF");
+                    break;
+                }
+                Ok(n) => n,
+                Err(e) => {
+                    println!("read error: {:?}", e);
+                    break;
+                }
+            };
+
+            println!("rxd {}", from_utf8(&tmp_buffer[..n]).unwrap());
+
+            PROTO_PARSE
+                .send(String::from_utf8(Vec::from_slice(&tmp_buffer[..n]).unwrap()).unwrap())
+                .await;
+
+            let ret_str = PROTO_RET.receive().await;
+            if let Err(e) = socket.write_all(ret_str.as_bytes()).await {
+                println!("write error: {:?}", e);
+                break;
+            }
+        }
+    }
 }
 
 #[embassy_executor::main]
@@ -81,17 +156,12 @@ async fn main(spawner: Spawner) {
         .await;
 
     let config = Config::dhcpv4(Default::default());
-    //let config = embassy_net::Config::ipv4_static(embassy_net::StaticConfigV4 {
-    //    address: Ipv4Cidr::new(Ipv4Address::new(192, 168, 69, 2), 24),
-    //    dns_servers: Vec::new(),
-    //    gateway: Some(Ipv4Address::new(192, 168, 69, 1)),
-    //});
-
     // Generate random seed
     let seed = rng.next_u64();
 
     // Init network stack
     static RESOURCES: StaticCell<StackResources<3>> = StaticCell::new();
+    static STACK: StaticCell<NetStack> = StaticCell::new();
     let (stack, runner) = embassy_net::new(
         net_device,
         config,
@@ -99,68 +169,29 @@ async fn main(spawner: Spawner) {
         seed,
     );
 
+    let stack = STACK.init(stack);
+
     spawner.spawn(unwrap!(net_task(runner)));
+    spawner.spawn(unwrap!(connection_task(stack, control)));
+    spawner.spawn(unwrap!(shell_task(stack)));
 
-    while let Err(err) = control
-        .join(WIFI_NETWORK, JoinOptions::new(WIFI_PASSWORD.as_bytes()))
-        .await
-    {
-        info!("join failed: {:?}", err);
-    }
-
-    info!("waiting for link...");
-    stack.wait_link_up().await;
-
-    info!("waiting for DHCP...");
-    stack.wait_config_up().await;
-
-    // And now we can use it!
-    info!("Stack is up!");
-
-    let mut rx_buffer = [0; 4096];
-    let mut tx_buffer = [0; 4096];
-    let mut buf = [0; 4096];
+    let in_chan = PROTO_PARSE.dyn_receiver();
+    let out_chan = PROTO_RET.dyn_sender();
 
     loop {
-        led.set_high();
-        let mut socket = TcpSocket::new(stack, &mut rx_buffer, &mut tx_buffer);
-        socket.set_timeout(Some(Duration::from_secs(10)));
+        let pkg = ParserMgr::new(in_chan.receive().await);
+        let reply = match pkg.cmd.as_str() {
+            "led" => {
+                led.set_low();
+                Ok("")
+            }
+            _ => Err("Invalid Command"),
+        };
 
-        control.gpio_set(0, false).await;
-        info!("Listening on TCP:1234...");
-        if let Err(e) = socket.accept(1234).await {
-            warn!("accept error: {:?}", e);
-            continue;
-        }
-
-        info!("Received connection from {:?}", socket.remote_endpoint());
-        control.gpio_set(0, true).await;
-
-        loop {
-            let n = match socket.read(&mut buf).await {
-                Ok(0) => {
-                    led.set_high();
-                    warn!("read EOF");
-                    break;
-                }
-                Ok(n) => n,
-                Err(e) => {
-                    warn!("read error: {:?}", e);
-                    break;
-                }
-            };
-
-            info!("rxd {}", from_utf8(&buf[..n]).unwrap());
-
-            match socket.write_all(&buf[..n]).await {
-                Ok(()) => {
-                    led.set_low();
-                }
-                Err(e) => {
-                    warn!("write error: {:?}", e);
-                    break;
-                }
-            };
-        }
+        let ret = match reply {
+            Ok(e) => reply_ok(e),
+            Err(e) => reply_err(e),
+        };
+        out_chan.send(ret).await;
     }
 }
