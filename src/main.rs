@@ -31,6 +31,12 @@ use nixi_clock::proto_parser::{ParserMgr, reply_err, reply_ok};
 type NetStack = embassy_net::Stack<'static>;
 type NetControl = cyw43::Control<'static>;
 
+const HELLO_MSG: &str = concat!(
+    "\n== Hello, Nixi Clock v",
+    env!("CARGO_PKG_VERSION"),
+    " here! ==\n"
+);
+
 bind_interrupts!(struct Irqs {
     PIO0_IRQ_0 => InterruptHandler<PIO0>;
     DMA_IRQ_0 => dma::InterruptHandler<DMA_CH0>;
@@ -97,6 +103,9 @@ async fn shell_task(stack: &'static NetStack) -> ! {
         if let Err(e) = socket.accept(20000).await {
             info!("accept error: {:?}", e);
             continue;
+        }
+        if let Err(e) = socket.write_all(HELLO_MSG.as_bytes()).await {
+            info!("write error: {:?}", e);
         }
         loop {
             let n = match socket.read(&mut tmp_buffer).await {
