@@ -12,17 +12,15 @@ use embassy_net::tcp::TcpSocket;
 use embassy_net::{Config, StackResources};
 use embassy_rp::clocks::RoscRng;
 use embassy_rp::gpio::{Level, Output};
-use embassy_rp::peripherals::{DMA_CH0, PIO0};
+use embassy_rp::peripherals::{DMA_CH0, PIO0, USB};
 use embassy_rp::pio::{InterruptHandler, Pio};
-use embassy_rp::{bind_interrupts, dma};
+use embassy_rp::{bind_interrupts, dma, usb};
 use embassy_sync::{blocking_mutex::raw::CriticalSectionRawMutex, channel::Channel};
 use embedded_io_async::Write;
 use static_cell::StaticCell;
 
 use heapless::{String, Vec};
-
-type NetStack = embassy_net::Stack<'static>;
-type NetControl = cyw43::Control<'static>;
+use log::{debug, error, info, warn};
 
 // defmt Logging
 use defmt::*;
@@ -30,9 +28,13 @@ use {defmt_rtt as _, panic_probe as _};
 
 use nixi_clock::proto_parser::{ParserMgr, reply_err, reply_ok};
 
+type NetStack = embassy_net::Stack<'static>;
+type NetControl = cyw43::Control<'static>;
+
 bind_interrupts!(struct Irqs {
     PIO0_IRQ_0 => InterruptHandler<PIO0>;
     DMA_IRQ_0 => dma::InterruptHandler<DMA_CH0>;
+    USBCTRL_IRQ => usb::InterruptHandler<USB>;
 });
 
 const WIFI_NETWORK: &str = env!("SSID");
@@ -40,6 +42,12 @@ const WIFI_PASSWORD: &str = env!("PASSWORD");
 
 static PROTO_PARSE: Channel<CriticalSectionRawMutex, String<128>, 2> = Channel::new();
 static PROTO_RET: Channel<CriticalSectionRawMutex, String<64>, 2> = Channel::new();
+
+#[embassy_executor::task]
+async fn logger_task(usb: embassy_rp::Peri<'static, embassy_rp::peripherals::USB>) {
+    let driver = embassy_rp::usb::Driver::new(usb, Irqs);
+    embassy_usb_logger::run!(1024, log::LevelFilter::Info, driver);
+}
 
 #[embassy_executor::task]
 async fn cyw43_task(
@@ -87,23 +95,23 @@ async fn shell_task(stack: &'static NetStack) -> ! {
         let mut socket = TcpSocket::new(*stack, &mut rx_buffer, &mut tx_buffer);
         socket.set_timeout(Some(embassy_time::Duration::from_secs(60)));
         if let Err(e) = socket.accept(20000).await {
-            println!("accept error: {:?}", e);
+            info!("accept error: {:?}", e);
             continue;
         }
         loop {
             let n = match socket.read(&mut tmp_buffer).await {
                 Ok(0) => {
-                    println!("read EOF");
+                    info!("read EOF");
                     break;
                 }
                 Ok(n) => n,
                 Err(e) => {
-                    println!("read error: {:?}", e);
+                    info!("read error: {:?}", e);
                     break;
                 }
             };
 
-            println!("rxd {}", from_utf8(&tmp_buffer[..n]).unwrap());
+            info!("rxd {}", from_utf8(&tmp_buffer[..n]).unwrap());
 
             PROTO_PARSE
                 .send(String::from_utf8(Vec::from_slice(&tmp_buffer[..n]).unwrap()).unwrap())
@@ -111,7 +119,7 @@ async fn shell_task(stack: &'static NetStack) -> ! {
 
             let ret_str = PROTO_RET.receive().await;
             if let Err(e) = socket.write_all(ret_str.as_bytes()).await {
-                println!("write error: {:?}", e);
+                info!("write error: {:?}", e);
                 break;
             }
         }
@@ -120,9 +128,10 @@ async fn shell_task(stack: &'static NetStack) -> ! {
 
 #[embassy_executor::main]
 async fn main(spawner: Spawner) {
-    info!("Hello World!");
-
     let p = embassy_rp::init(Default::default());
+
+    spawner.spawn(unwrap!(logger_task(p.USB)));
+
     let mut rng = RoscRng;
 
     let fw = aligned_bytes!("../firmware/43439A0.bin");
@@ -182,6 +191,7 @@ async fn main(spawner: Spawner) {
         let pkg = ParserMgr::new(in_chan.receive().await);
         let reply = match pkg.cmd.as_str() {
             "led" => {
+                info!("led\n");
                 led.set_low();
                 Ok("")
             }

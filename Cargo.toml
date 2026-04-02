@@ -2,7 +2,7 @@
 edition = "2024"
 name = "nixi-clock"
 version = "0.1.0"
-license = "MIT OR Apache-2.0"
+license = "GPLv2.0"
 
 publish = false
 
@@ -49,13 +49,13 @@ cyw43-pio = { version = "0.10.0", features = ["defmt"] }
 
 defmt = "1.0.1"
 defmt-rtt = "1.1.0"
+panic-probe = { version = "1.0.0", features = ["print-defmt"] }
 
 
 #cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
 cortex-m = { version = "0.7.6", features = ["inline-asm"] }
 cortex-m-rt = "0.7.0"
 critical-section = "1.1"
-panic-probe = { version = "1.0.0", features = ["print-defmt"] }
 byte-slice-cast = { version = "1.2.0", default-features = false }
 smart-leds = "0.4.0"
 heapless = "0.9"
