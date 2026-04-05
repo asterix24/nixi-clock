@@ -91,7 +91,7 @@ async fn clock_task() -> ! {
     let mut data: u8 = 0;
     let sipo_out = SIPO_OUT.dyn_sender();
     loop {
-        embassy_time::Timer::after_millis(200).await;
+        embassy_time::Timer::after_millis(100).await;
         sipo_out.send(data).await;
         if data == 0 {
             data = 1;
@@ -121,7 +121,7 @@ async fn connection_task(stack: &'static NetStack, mut control: NetControl) -> !
             if let Some(config) = stack.config_v4() {
                 info!("IP: {}", config.address);
             }
-            control.gpio_set(0, false).await;
+            control.gpio_set(1, true).await;
         }
         embassy_time::Timer::after_secs(5).await;
     }
