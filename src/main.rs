@@ -21,7 +21,7 @@ use embedded_io_async::Write;
 use static_cell::StaticCell;
 
 use heapless::{String, Vec};
-use log::{debug, error, info, warn};
+use log::{error, info};
 
 use defmt::*;
 // defmt Logging
@@ -84,6 +84,20 @@ async fn cyw43_task(
 #[embassy_executor::task]
 async fn net_task(mut runner: embassy_net::Runner<'static, cyw43::NetDriver<'static>>) -> ! {
     runner.run().await
+}
+
+#[embassy_executor::task]
+async fn clock_task() -> ! {
+    let mut data: u8 = 0;
+    let sipo_out = SIPO_OUT.dyn_sender();
+    loop {
+        embassy_time::Timer::after_millis(200).await;
+        sipo_out.send(data).await;
+        if data == 0 {
+            data = 1;
+        }
+        data = data << 1;
+    }
 }
 
 #[embassy_executor::task]
@@ -169,7 +183,7 @@ async fn main(spawner: Spawner) {
     let clm = aligned_bytes!("../firmware/43439A0_clm.bin");
     let nvram = aligned_bytes!("../firmware/nvram_rp2040.bin");
 
-    let led = Output::new(p.PIN_22, Level::Low);
+    let mut led = Output::new(p.PIN_22, Level::Low);
     let pwr = Output::new(p.PIN_23, Level::Low);
     let cs = Output::new(p.PIN_25, Level::High);
     let mut pio = Pio::new(p.PIO0, Irqs);
@@ -212,8 +226,6 @@ async fn main(spawner: Spawner) {
         .await;
 
     let config = embassy_net::Config::dhcpv4(Default::default());
-    // Generate random seed
-    let seed = rng.next_u64();
 
     // Init network stack
     static RESOURCES: StaticCell<StackResources<3>> = StaticCell::new();
@@ -222,7 +234,7 @@ async fn main(spawner: Spawner) {
         net_device,
         config,
         RESOURCES.init(StackResources::new()),
-        seed,
+        rng.next_u64(),
     );
 
     let stack = STACK.init(stack);
@@ -231,6 +243,7 @@ async fn main(spawner: Spawner) {
     spawner.spawn(unwrap!(connection_task(stack, control)));
     spawner.spawn(unwrap!(shell_task(stack)));
     spawner.spawn(unwrap!(sipo_task(sipo, sipo_load)));
+    spawner.spawn(unwrap!(clock_task()));
 
     let in_chan = PROTO_PARSE.dyn_receiver();
     let out_chan = PROTO_RET.dyn_sender();
@@ -249,5 +262,6 @@ async fn main(spawner: Spawner) {
             Err(_) => reply("Uknow Connand: {}", true),
         };
         out_chan.send(return_msg).await;
+        led.toggle();
     }
 }
