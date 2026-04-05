@@ -22,11 +22,11 @@ use static_cell::StaticCell;
 use heapless::{String, Vec};
 use log::{debug, error, info, warn};
 
-// defmt Logging
 use defmt::*;
+// defmt Logging
 use {defmt_rtt as _, panic_probe as _};
 
-use nixi_clock::proto_parser::{ParserMgr, reply_err, reply_ok};
+use nixi_clock::parser::{Command, reply};
 
 type NetStack = embassy_net::Stack<'static>;
 type NetControl = cyw43::Control<'static>;
@@ -85,7 +85,7 @@ async fn connection_task(stack: &'static NetStack, mut control: NetControl) -> !
 
             // And now we can use it!
             info!("Stack is up!");
-            control.gpio_set(1, false).await;
+            control.gpio_set(0, false).await;
         }
         embassy_time::Timer::after_secs(5).await;
     }
@@ -147,7 +147,7 @@ async fn main(spawner: Spawner) {
     let clm = aligned_bytes!("../firmware/43439A0_clm.bin");
     let nvram = aligned_bytes!("../firmware/nvram_rp2040.bin");
 
-    let mut led = Output::new(p.PIN_16, Level::Low);
+    //let led = Output::new(p.PIN_16, Level::Low);
     let pwr = Output::new(p.PIN_23, Level::Low);
     let cs = Output::new(p.PIN_25, Level::High);
     let mut pio = Pio::new(p.PIO0, Irqs);
@@ -197,20 +197,13 @@ async fn main(spawner: Spawner) {
     let out_chan = PROTO_RET.dyn_sender();
 
     loop {
-        let pkg = ParserMgr::new(in_chan.receive().await);
-        let reply = match pkg.cmd.as_str() {
-            "led" => {
-                info!("led\n");
-                led.set_low();
-                Ok("")
-            }
-            _ => Err("Invalid Command"),
+        let return_msg = match Command::try_from(in_chan.receive().await) {
+            Ok(cmd) => match cmd {
+                Command::Version => reply(env!("CARGO_PKG_VERSION"), true),
+                _ => reply("Invalid Command", true),
+            },
+            Err(e) => reply(format!("Uknow Connand: {}", e), true),
         };
-
-        let ret = match reply {
-            Ok(e) => reply_ok(e),
-            Err(e) => reply_err(e),
-        };
-        out_chan.send(ret).await;
+        out_chan.send(return_msg).await;
     }
 }
