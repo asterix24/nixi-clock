@@ -1,2 +1,20 @@
+### Altium ###
+# Previews Folders
+**/__Previews/
+
+# History Folders
+**/History/*
+
+# Project Logs
+Project Logs*/
+
+# Project Outputs
+Project Outputs*/
+
 /target
+*.PcbDoc.htm
+
 firmware/target
+**/*.ldb
+
+Status Report.Txt
