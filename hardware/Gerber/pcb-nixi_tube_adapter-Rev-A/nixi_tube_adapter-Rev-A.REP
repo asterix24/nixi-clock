@@ -1,0 +1,255 @@
+*************************************************************
+FileName = nixi_tube_adapter-Rev-A.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : nixi_tube_adapter-Rev-A_Copper_Signal_Top.gbr
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D17
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : nixi_tube_adapter-Rev-A_Copper_Signal_Bot.gbr
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D17
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : nixi_tube_adapter-Rev-A_Legend_Top.gbr
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Top TitleBlock
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : nixi_tube_adapter-Rev-A_Paste_Top.gbr
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : nixi_tube_adapter-Rev-A_Soldermask_Top.gbr
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : nixi_tube_adapter-Rev-A_Legend_Bot.gbr
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Top TitleBlock
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : nixi_tube_adapter-Rev-A_Outline.gbr
+
+    Adding Layer      : Outline
+
+    Adding Layer      : Top TitleBlock
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D19
+*************************************************************
+
+*************************************************************
+Generating : PCB_Note
+      File : nixi_tube_adapter-Rev-A_PCB_Note.gbr
+
+    Adding Layer      : PCB_Note
+
+    Adding Layer      : Top TitleBlock
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D19
+    D20
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : nixi_tube_adapter-Rev-A_Soldermask_Bot.gbr
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : nixi_tube_adapter-Rev-A_Paste_Bot.gbr
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : nixi_tube_adapter-Rev-A_Drawing_1.gbr
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : nixi_tube_adapter-Rev-A_Drillmap_1.gbr
+
+    Adding Layer      : Top TitleBlock
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : nixi_tube_adapter-Rev-A_Profile.gbr
+
+
+Used DCodes :
+    D24
+*************************************************************
+

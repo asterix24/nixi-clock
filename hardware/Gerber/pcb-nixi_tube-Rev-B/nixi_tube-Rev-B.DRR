@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: nixi_tube.PcbDoc   25/03/2026  16:14:35
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : nixi_tube-Rev-B.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             194       PTH        1045.47mm (41.16inch)
+T2      0.72mm (28mil)                                            Round             16        PTH        126.88mm (5.00inch)
+T3      0.75mm (30mil)                                            Round             5         PTH        33.02mm (1.30inch)
+T4      0.85mm (33mil)                                            Round             8         PTH        111.32mm (4.38inch)
+T5      0.9mm (35mil)                                             Round             82        PTH        356.16mm (14.02inch)
+T6      1.45mm (57mil)                                            Round             56        PTH        305.33mm (12.02inch)
+T7      2.6mm (102mil)                                            Round             4         PTH        290.96mm (11.46inch)
+T8      7mm (276mil)                                              Round             4         NPTH       104.98mm (4.13inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              369
+
+Total Processing Time (hh:mm:ss) : 00:00:00
