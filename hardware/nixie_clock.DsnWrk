@@ -1,20 +1,6 @@
 [ProjectGroup]
 Version=1.0
 [Project1]
-ProjectPath=nixie_clock\nixie_clock.PrjPcb
+ProjectPath=nixie_clock_hv\nixie_clock_hv.PrjPcb
 [Project2]
 ProjectPath=nixie_clock_cpu\nixie_clock_cpu.PrjPcb
-[Project3]
-ProjectPath=nixie_clock_holder\nixie_clock_holder.PrjPcb
-[Project4]
-ProjectPath=..\..\..\Dropbox\Isokey\SN_SUNIX_S_R1.2_WTB\Imported SN_SUNIX_S_R1.2_WTB.PrjPcb\SN_SUNIX_S_R1.2_WTB.PrjPcb
-[Project5]
-ProjectPath=nixie_clock_adapter\nixie_tube_adapter.PrjPcb
-[Project6]
-ProjectPath=..\xmas_next\xmas_next\xmas_next.PrjPcb
-[Project7]
-ProjectPath=..\piron-sch\SCH30080\SCH30080\SCH30080.PrjPcb
-[Project8]
-ProjectPath=..\piron-sch\SCH30065\SCH30065\SCH30065.PrjPcb
-[Project9]
-ProjectPath=..\fvga\fvga.PrjPcb

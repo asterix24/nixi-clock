@@ -17,11 +17,11 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=Gerber.OutJob
 Description=
-TargetOutputMedium=Gerber
+TargetOutputMedium=GerberCloud
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=HP4F186F.trilan (HP Color LaserJet Pro M478f-9f)
+TargetPrinter=HPamministrazione (HP Color LaserJet Pro M478f-9f)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -33,6 +33,8 @@ OutputMedium3=New Print Job
 OutputMedium3_Type=Printer
 OutputMedium3_Printer=Brother QL-720NW
 OutputMedium3_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium4=GerberCloud
+OutputMedium4_Type=GeneratedFiles
 OutputType1=Gerber
 OutputName1=Gerber Files
 OutputCategory1=Fabrication
@@ -42,6 +44,7 @@ OutputEnabled1=1
 OutputEnabled1_OutputMedium1=0
 OutputEnabled1_OutputMedium2=1
 OutputEnabled1_OutputMedium3=0
+OutputEnabled1_OutputMedium4=1
 OutputDefault1=0
 Configuration1_Name1=OutputConfigurationParameter1
 Configuration1_Item1=AddLayersToGroup.Group_0=0|AddLayersToGroup.Group_1=1|AddLayersToGroup.Group_2=2|AddLayersToGroup.Group_3=3|AddLayersToGroup.Group_4=4|AddLayersToGroup.Group_5=5|AddLayersToGroup.Group_6=7|AddLayersToGroup.Group_7=8|AddLayersToGroup.Set_0=16908296|AddLayersToGroup.Set_1=16908296|AddLayersToGroup.Set_2=16908296|AddLayersToGroup.Set_3=16908296|AddLayersToGroup.Set_4=16908296|AddLayersToGroup.Set_5=16908296|AddLayersToGroup.Set_6=16908296|AddLayersToGroup.Set_7=16908296|AddLayersToGroups.Count=8|AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16908296~1|BoardID=GDUMGNRW|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908295~1|PlotBoardProfile=False|PlotBoardProfileFileName=nixi_ clock_cpu_Profile.gbr|PlotDrillDrawingLayerPair0_Backdrill=False|PlotDrillDrawingLayerPair0_Checked=True|PlotDrillDrawingLayerPair0_DrillType=Regular|PlotDrillDrawingLayerPair0_FileName=nixi_ clock_cpu_Drawing_1.gbr|PlotDrillDrawingLayerPair0_HighLayer=Bottom Layer|PlotDrillDrawingLayerPair0_LowLayer=Top Layer|PlotDrillGuideLayerPair0_Backdrill=False|PlotDrillGuideLayerPair0_Checked=True|PlotDrillGuideLayerPair0_DrillType=Regular|PlotDrillGuideLayerPair0_FileName=nixi_ clock_cpu_Drillmap_1.gbr|PlotDrillGuideLayerPair0_HighLayer=Bottom Layer|PlotDrillGuideLayerPair0_LowLayer=Top Layer|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|UserLayerName.Caption0=nixi_ clock_cpu_Mechanical_23.gbr|UserLayerName.Caption1=nixi_ clock_cpu_Paste_Top.gbr|UserLayerName.Caption10=nixi_ clock_cpu_Soldermask_Bot.gbr|UserLayerName.Caption11=nixi_ clock_cpu_Note_Bottom.gbr|UserLayerName.Caption12=nixi_ clock_cpu_Place_Bottom.gbr|UserLayerName.Caption13=nixi_ clock_cpu_Copper_Signal_Bot.gbr|UserLayerName.Caption14=nixi_ clock_cpu_Note_Top.gbr|UserLayerName.Caption15=nixi_ clock_cpu_Place_Top.gbr|UserLayerName.Caption16=nixi_ clock_cpu_3d_model_Bottom.gbr|UserLayerName.Caption17=nixi_ clock_cpu_PCB_Note_Panel.gbr|UserLayerName.Caption18=nixi_ clock_cpu_Copper_Signal_Top.gbr|UserLayerName.Caption19=nixi_ clock_cpu_Route_Tool_Path.gbr|UserLayerName.Caption2=nixi_ clock_cpu_Legend_Top.gbr|UserLayerName.Caption20=nixi_ clock_cpu_Legend_Bot.gbr|UserLayerName.Caption21=nixi_ clock_cpu_Pads_Top.gbr|UserLayerName.Caption22=nixi_ clock_cpu_3d_model_Top.gbr|UserLayerName.Caption23=nixi_ clock_cpu_Drawing3.gbr|UserLayerName.Caption24=nixi_ clock_cpu_Bottom_TitleBlock.gbr|UserLayerName.Caption25=nixi_ clock_cpu_Outline.gbr|UserLayerName.Caption26=nixi_ clock_cpu_Mechanical_24.gbr|UserLayerName.Caption27=nixi_ clock_cpu_Top_TitleBlock.gbr|UserLayerName.Caption28=nixi_ clock_cpu_Assembly_Top.gbr|UserLayerName.Caption29=nixi_ clock_cpu_Outline_Panel.gbr|UserLayerName.Caption3=nixi_ clock_cpu_Soldermask_Top.gbr|UserLayerName.Caption30=nixi_ clock_cpu_Drawing4.gbr|UserLayerName.Caption31=nixi_ clock_cpu_Keep-out.gbr|UserLayerName.Caption4=nixi_ clock_cpu_Assembly_Bottom.gbr|UserLayerName.Caption5=nixi_ clock_cpu_Drawing.gbr|UserLayerName.Caption6=nixi_ clock_cpu_Pads_Bot.gbr|UserLayerName.Caption7=nixi_ clock_cpu_Paste_Bot.gbr|UserLayerName.Caption8=nixi_ clock_cpu_V_Cut.gbr|UserLayerName.Caption9=nixi_ clock_cpu_PCB_Note.gbr|UserLayerName.Count=32|UserLayerName.Layer0=16908311|UserLayerName.Layer1=16973832|UserLayerName.Layer10=16973835|UserLayerName.Layer11=16908294|UserLayerName.Layer12=16908304|UserLayerName.Layer13=16842751|UserLayerName.Layer14=16908293|UserLayerName.Layer15=16908303|UserLayerName.Layer16=16908302|UserLayerName.Layer17=16908305|UserLayerName.Layer18=16777217|UserLayerName.Layer19=16908306|UserLayerName.Layer2=16973830|UserLayerName.Layer20=16973831|UserLayerName.Layer21=16973848|UserLayerName.Layer22=16908301|UserLayerName.Layer23=16908309|UserLayerName.Layer24=16908297|UserLayerName.Layer25=16908289|UserLayerName.Layer26=16908312|UserLayerName.Layer27=16908296|UserLayerName.Layer28=16908291|UserLayerName.Layer29=16908308|UserLayerName.Layer3=16973834|UserLayerName.Layer30=16908310|UserLayerName.Layer31=16973837|UserLayerName.Layer4=16908292|UserLayerName.Layer5=16908290|UserLayerName.Layer6=16973849|UserLayerName.Layer7=16973833|UserLayerName.Layer8=16908307|UserLayerName.Layer9=16908295|DocumentPath=C:\Users\Asterix\Documents\github\nixe_clock\nixie_clock_cpu\nixi_ clock_cpu.PcbDoc
@@ -54,6 +57,7 @@ OutputEnabled2=1
 OutputEnabled2_OutputMedium1=0
 OutputEnabled2_OutputMedium2=2
 OutputEnabled2_OutputMedium3=0
+OutputEnabled2_OutputMedium4=2
 OutputDefault2=0
 Configuration2_Name1=OutputConfigurationParameter1
 Configuration2_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=C:\Users\Asterix\Documents\gitlab\isokey\schematics\controller\controller.PcbDoc
@@ -62,10 +66,11 @@ OutputName3=Gerber Files Panel
 OutputCategory3=Fabrication
 OutputDocumentPath3=control_unit_pannel.PcbDoc
 OutputVariantName3=
-OutputEnabled3=1
+OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
 OutputEnabled3_OutputMedium2=3
 OutputEnabled3_OutputMedium3=0
+OutputEnabled3_OutputMedium4=0
 OutputDefault3=0
 Configuration3_Name1=OutputConfigurationParameter1
 Configuration3_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908305~1,16908306~1,16908307~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=control_unit_pannel.PcbDoc
@@ -74,16 +79,17 @@ OutputName4=NC Drill Files Panel
 OutputCategory4=Fabrication
 OutputDocumentPath4=control_unit_pannel.PcbDoc
 OutputVariantName4=
-OutputEnabled4=1
+OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=4
 OutputEnabled4_OutputMedium3=0
+OutputEnabled4_OutputMedium4=0
 OutputDefault4=0
 Configuration4_Name1=OutputConfigurationParameter1
 Configuration4_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=control_unit_pannel.PcbDoc
 
 [PublishSettings]
-OutputFilePath2=C:\Users\Asterix\Documents\github\nixe_clock\nixie_clock_cpu\..\Gerber\
+OutputFilePath2=C:\Users\asterix\Documents\Altium\projects\nixie_clock_cpu\..\Gerber\
 ReleaseManaged2=0
 OutputBasePath2=..\
 OutputPathMedia2=[Media Name]
@@ -96,9 +102,22 @@ OutputFileNameMulti2==DataSource+'-Rev-'+prj_pcb
 UseOutputNameForMulti2=0
 OutputFileNameSpecial2=
 OpenOutput2=0
+OutputFilePath4=C:\Users\asterix\Documents\Altium\Temp\
+ReleaseManaged4=1
+OutputBasePath4=..\..\Temp
+OutputPathMedia4=
+OutputPathMediaValue4=
+OutputPathOutputer4=[Output Custom]
+OutputPathOutputerPrefix4=
+OutputPathOutputerValue4=='pcb-'+DataSource+'-Rev-'+prj_pcb
+OutputFileName4=
+OutputFileNameMulti4==DataSource+'-Rev-'+prj_pcb
+UseOutputNameForMulti4=0
+OutputFileNameSpecial4=
+OpenOutput4=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\Asterix\Documents\github\nixe_clock\nixie_clock_cpu\..\Gerber\
+RelativeOutputPath2=C:\Users\asterix\Documents\Altium\projects\nixie_clock_cpu\..\Gerber\
 OpenOutputs2=0
 AddToProject2=1
 TimestampFolder2=0
@@ -108,4 +127,14 @@ OpenGerberOutput2=0
 OpenNCDrillOutput2=0
 OpenIPCOutput2=0
 EnableReload2=0
+RelativeOutputPath4=C:\Users\asterix\Documents\Altium\Temp\
+OpenOutputs4=1
+AddToProject4=1
+TimestampFolder4=0
+UseOutputName4=0
+OpenODBOutput4=0
+OpenGerberOutput4=0
+OpenNCDrillOutput4=0
+OpenIPCOutput4=0
+EnableReload4=0
 
