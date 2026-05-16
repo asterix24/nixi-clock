@@ -1,0 +1,903 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9cf9a97e-ff65-41d5-881a-dc9f9dc5c28e")
+	(paper "A3")
+	(title_block
+		(rev "0")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 172.72 43.0022)
+		(end 25.4 109.0422)
+		(stroke
+			(width 0.762)
+			(type solid)
+			(color 152 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "644305eb-e960-489d-a6d8-31da140b27c6")
+	)
+	(rectangle
+		(start 322.58 43.0022)
+		(end 177.8 152.2222)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 39 78 19 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "86f9c5fc-e50a-4145-975b-9745ebaac8c9")
+	)
+	(text "${#}"
+		(exclude_from_sim no)
+		(at 348.615 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f55dfc8-d741-4463-95a6-0bbae327b683")
+	)
+	(text "${PRJ_PN}"
+		(exclude_from_sim no)
+		(at 63.5 63.3222 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+				(thickness 0.5588)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "1256cbf3-9350-4ef8-a07f-245d2071455d")
+	)
+	(text "Hardware version:"
+		(exclude_from_sim no)
+		(at 60.96 78.5622 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "132179ca-0dce-45a5-b9e0-38e45120d0af")
+	)
+	(text "Power Distribution"
+		(exclude_from_sim no)
+		(at 180.34 50.6222 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "13cb11a9-29ee-499a-b036-af282705e031")
+	)
+	(text "Desc:"
+		(exclude_from_sim no)
+		(at 303.53 270.3322 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20e1b268-c3d0-4df3-a411-6cbf59c36729")
+	)
+	(text "File:"
+		(exclude_from_sim no)
+		(at 303.53 289.3822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27c8185f-717f-4302-8feb-976422fad2de")
+	)
+	(text "${PRJ_NAME}"
+		(exclude_from_sim no)
+		(at 63.5 49.3522 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+				(thickness 0.5588)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "2cd397a7-e8f2-4b80-a010-35753f14aba4")
+	)
+	(text "5V DC"
+		(exclude_from_sim no)
+		(at 180.34 91.2622 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "2e1c5ac7-e06c-49cc-b366-7f8fbaa86e75")
+	)
+	(text "${##}"
+		(exclude_from_sim no)
+		(at 356.87 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3556e2d5-bf45-4343-aa09-b3ea4964a217")
+	)
+	(text "Prj Rev:"
+		(exclude_from_sim no)
+		(at 361.95 286.8422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3bd61092-3fee-4d1e-a833-048a28a909e9")
+	)
+	(text "Variant:"
+		(exclude_from_sim no)
+		(at 60.96 84.9122 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "3ecb953e-e729-45ba-a5cb-48a85747b200")
+	)
+	(text "of"
+		(exclude_from_sim no)
+		(at 351.79 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "412c9b1c-a5b9-42dd-83d2-d411a5bd5a53")
+	)
+	(text "Board Schematic blocks"
+		(exclude_from_sim no)
+		(at 220.98 205.5622 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "41cfc4ce-1e13-4f70-be7e-3c0c4d738f32")
+	)
+	(text "Project Name:"
+		(exclude_from_sim no)
+		(at 60.96 49.3522 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "4219c663-1b37-4be1-abdc-234145ce54bb")
+	)
+	(text "${AUTHOR}"
+		(exclude_from_sim no)
+		(at 63.5 101.4222 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "42938de7-a79d-4931-ac85-a3e0a0d8afc6")
+	)
+	(text "${PRJ_NAME_LONG}"
+		(exclude_from_sim no)
+		(at 309.88 272.8722 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b7be59f-4173-46ab-bc38-d1398e66cfeb")
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 306.07 262.7122 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f88c8da-2657-448f-ad27-7a4827ce65ba")
+	)
+	(text "Title:"
+		(exclude_from_sim no)
+		(at 303.53 258.9022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "516da0f8-08f2-478e-a920-62f40c82e766")
+	)
+	(text "Ing. Daniele Basile"
+		(exclude_from_sim no)
+		(at 317.5 279.2222 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "5243f474-0d63-4338-9af2-f8270c168b19")
+	)
+	(text "${CURRENTTIME}"
+		(exclude_from_sim no)
+		(at 325.755 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "58da1510-5e61-47f3-8db3-b0e721d5c35d")
+	)
+	(text "${PRJ_NAME_LONG}"
+		(exclude_from_sim no)
+		(at 63.5 56.9722 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+				(thickness 0.5588)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "5ca7eecc-eb52-4b95-82f0-fc42e723d396")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 349.25 289.3822 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "67f48897-1e90-47b8-8c45-a121ad095010")
+	)
+	(text "Rev:"
+		(exclude_from_sim no)
+		(at 341.63 289.3822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "68c369b9-8a35-4116-8714-a5434cc1fe90")
+	)
+	(text "Date:"
+		(exclude_from_sim no)
+		(at 303.53 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a4bb0e2-c3d2-4137-98a6-192ea660291b")
+	)
+	(text "${VARIANTNAME}"
+		(exclude_from_sim no)
+		(at 63.5 84.9122 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+				(thickness 0.5588)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6c408018-ca81-4882-a533-a5058f3a0b1b")
+	)
+	(text "${PRJ_DATE}"
+		(exclude_from_sim no)
+		(at 63.5 70.9422 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+				(thickness 0.5588)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6d5771f9-dfe6-459e-8454-d6033cd956d9")
+	)
+	(text "Description:"
+		(exclude_from_sim no)
+		(at 60.96 56.9722 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "72166c84-c326-4507-a6f2-6de85089afb2")
+	)
+	(text "${PRJ_STATUS}"
+		(exclude_from_sim no)
+		(at 363.22 284.3022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b0b97f9-e296-4dc7-abc4-a57b55ca3230")
+	)
+	(text "Author:"
+		(exclude_from_sim no)
+		(at 60.96 101.4222 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "87a81f0f-d3b2-4603-8f36-b71833fb6f39")
+	)
+	(text "${PRJ_STATUS}"
+		(exclude_from_sim no)
+		(at 63.5 93.8022 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+				(thickness 0.5588)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "926107f2-6386-4c21-9abe-0d58c6637134")
+	)
+	(text "asterix24@gmail.com"
+		(exclude_from_sim no)
+		(at 315.446 283.0322 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "973ef989-83cd-4a3d-9829-9f4ba73d9232")
+	)
+	(text "A3"
+		(exclude_from_sim no)
+		(at 382.27 290.6522 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "980cf779-f312-40b5-a452-65ae8812ffc7")
+	)
+	(text "Variant:"
+		(exclude_from_sim no)
+		(at 360.68 276.6822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d44a09d-b81f-4b81-959a-3d1549a0bdae")
+	)
+	(text "License:"
+		(exclude_from_sim no)
+		(at 303.53 286.8422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ff0b415-9d79-4fc1-a902-99cc7592a23b")
+	)
+	(text "Size:"
+		(exclude_from_sim no)
+		(at 377.19 287.0962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad872542-4dcf-4f6b-ace6-9f0a54a13bd8")
+	)
+	(text "PN:"
+		(exclude_from_sim no)
+		(at 60.96 63.3222 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "b6b80ada-8592-4b7e-8bfc-7e0f433ae3bd")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 309.245 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c73efaf0-6143-4007-a1b6-af15fa11503a")
+	)
+	(text "Status:"
+		(exclude_from_sim no)
+		(at 60.96 93.8022 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "c9d30857-9fee-4f78-860f-10bfdc71815f")
+	)
+	(text "Sheet"
+		(exclude_from_sim no)
+		(at 341.63 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9d36b00-aa81-4059-a685-d929dd0e98c2")
+	)
+	(text "${PRJ_LICENSE}"
+		(exclude_from_sim no)
+		(at 312.42 286.8422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3ce9ecf-9d09-49c6-865f-71ff9b3ce570")
+	)
+	(text "Status:"
+		(exclude_from_sim no)
+		(at 361.95 281.7622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3e55db2-75c1-4fa2-960a-dc510b949ebd")
+	)
+	(text "${PRJ_HW_VER}"
+		(exclude_from_sim no)
+		(at 361.95 290.6522 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "d704a222-b099-47c1-a0e8-c0bd1acf81fe")
+	)
+	(text "${PRJ_NAME}"
+		(exclude_from_sim no)
+		(at 309.88 267.7922 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7800dcc-bb9c-45b7-b530-7d3fc8bdc20b")
+	)
+	(text "${PRJ_HW_VER}"
+		(exclude_from_sim no)
+		(at 63.5 78.5622 0)
+		(effects
+			(font
+				(size 2.794 2.794)
+				(thickness 0.5588)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "da10caac-a699-4b0e-97dc-2337a75ec194")
+	)
+	(text "${FILENAME}"
+		(exclude_from_sim no)
+		(at 309.88 289.3822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dedf31ed-820f-4d80-a4c8-347c5f15cb60")
+	)
+	(text "Project Date:"
+		(exclude_from_sim no)
+		(at 60.96 70.9422 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "e340701a-e5d3-407c-9dcc-5da844bc5044")
+	)
+	(text "Time:"
+		(exclude_from_sim no)
+		(at 319.405 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2842b19-6987-45d6-b6e1-25bdf08eb7b4")
+	)
+	(text "${VARIANTNAME}"
+		(exclude_from_sim no)
+		(at 363.22 279.2222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5e87649-cce7-4ea5-a22a-c3379871b3f2")
+	)
+	(text "Project:"
+		(exclude_from_sim no)
+		(at 303.53 265.2522 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffe7c60a-f208-4970-b615-ef625be2dd97")
+	)
+	(text_box "3.3V DC"
+		(exclude_from_sim no)
+		(at 233.68 91.2622 0)
+		(size -25.4 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "3f1bdc4c-be5f-4dab-944b-938b85aad8b1")
+	)
+	(text_box "CHANGELOG:\n\n##  6/4/2020\n  * First drawing"
+		(exclude_from_sim no)
+		(at 172.72 119.2022 0)
+		(size -147.32 152.4)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.286 2.286)
+			)
+			(justify left top)
+		)
+		(uuid "b2f8fd6f-f2f1-4647-8a1b-f32828f63047")
+	)
+	(polyline
+		(pts
+			(xy 340.36 286.8422) (xy 340.36 291.9222)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "04436513-ac32-4339-bace-a63e05c60ef5")
+	)
+	(polyline
+		(pts
+			(xy 388.62 256.3622) (xy 302.26 256.3622)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "161843f7-11d1-4f81-bd49-ca84cbcba141")
+	)
+	(polyline
+		(pts
+			(xy 302.26 286.8422) (xy 360.68 286.8422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "1a15d9a1-86cb-43e7-8487-cae2f66bc2d0")
+	)
+	(polyline
+		(pts
+			(xy 302.26 267.7922) (xy 302.26 293.1922)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "24ff42f6-fb4e-4061-bab8-03fd2b4eafe0")
+	)
+	(polyline
+		(pts
+			(xy 360.68 291.9222) (xy 360.68 274.1422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "28afc38a-1649-4ac8-9d60-fae11cd8c094")
+	)
+	(polyline
+		(pts
+			(xy 388.62 274.1422) (xy 302.26 274.1422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "30b93899-55ce-4e75-82c2-ebea75056615")
+	)
+	(polyline
+		(pts
+			(xy 360.68 284.3022) (xy 302.26 284.3022)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "5fdc4e9a-6100-4056-8b07-d537648b666e")
+	)
+	(polyline
+		(pts
+			(xy 360.68 289.3822) (xy 302.26 289.3822)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "7c0759a6-07be-46ba-a2af-73c10e62db7f")
+	)
+	(polyline
+		(pts
+			(xy 376.682 284.3022) (xy 376.682 291.9222)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "83183900-e3a8-4cf3-bb01-83fb53a1e1fb")
+	)
+	(polyline
+		(pts
+			(xy 302.26 262.7122) (xy 302.26 286.8422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "87e98f42-cd5d-435d-aef8-a6a8a5de943f")
+	)
+	(polyline
+		(pts
+			(xy 360.68 279.2222) (xy 388.62 279.2222)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9d00f58c-aacf-4f32-945a-7b141a65f629")
+	)
+	(polyline
+		(pts
+			(xy 388.62 262.7122) (xy 302.26 262.7122)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ad744f80-8317-4a06-8047-79af33c898be")
+	)
+	(polyline
+		(pts
+			(xy 360.68 284.3022) (xy 388.62 284.3022)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "b1d2e47f-f32e-4a28-98bd-46349439ac83")
+	)
+	(polyline
+		(pts
+			(xy 388.62 267.7922) (xy 302.26 267.7922)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "b4a0311b-e6ff-4cd6-a358-467bd4225be8")
+	)
+	(polyline
+		(pts
+			(xy 195.58 96.3422) (xy 208.28 96.3422)
+		)
+		(stroke
+			(width 0.762)
+			(type solid)
+			(color 230 145 56 1)
+		)
+		(uuid "bd2f638b-2e74-4358-a147-36fbe460e30a")
+	)
+	(polyline
+		(pts
+			(xy 302.26 256.3622) (xy 302.26 277.9522)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "e6ac9cb8-b28f-404f-9ab6-8eaf584b0eb7")
+	)
+	(sheet
+		(at 213.36 177.6222)
+		(size 76.2 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 128 0 0 1)
+		)
+		(fill
+			(color 128 255 128 1)
+		)
+		(uuid "05b61e55-5bd6-4f01-a13b-3fd8fde8cf63")
+		(property "Sheetname" "_1"
+			(at 213.36 175.0822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "main.kicad_sch"
+			(at 213.36 177.6222 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(instances
+			(project "nixie_clock_cpu"
+				(path "/33a490f3-b417-4552-b0b0-d210493b0da8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "3")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,2827 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "bd23bdf1-4c54-4208-aa70-a78b95b0ddc9")
+	(paper "A3")
+	(title_block
+		(rev "0")
+	)
+	(lib_symbols
+		(symbol "develer_components:Power_0_BootModule_3-9V_170V_develer_components.SchLib"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "som boot power supply 3-9V to 170V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BoostModule*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Power_0_BootModule_3-9V_170V_develer_components.SchLib_1_0"
+				(polyline
+					(pts
+						(xy -3.81 0) (xy 6.35 0)
+					)
+					(stroke
+						(width 0.508)
+						(type solid)
+						(color 74 134 232 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 8.89 -8.89)
+					(end -5.08 8.89)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 127 96 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 229 153 0.5)
+					)
+				)
+				(text "5V"
+					(at -1.27 6.35 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "20mA"
+					(at -1.27 -2.54 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "160V"
+					(at 1.27 -2.54 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify right bottom)
+					)
+				)
+				(pin passive line
+					(at 6.35 12.7 270)
+					(length 3.81)
+					(name "Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 12.7 270)
+					(length 3.81)
+					(name "En"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 5.08 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -5.08 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -12.7 90)
+					(length 3.81)
+					(name "HV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "develer_generic:Power_0_Cap_develer_generic.schlib"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*0603_[1608]*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Power_0_Cap_develer_generic.schlib_1_0"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -2.032) (xy -0.508 2.032)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 2.032) (xy 0.508 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "develer_generic:Power_0_Res_develer_generic.schlib_0"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*0603_[1608]*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Power_0_Res_develer_generic.schlib_0_1_0"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0) (xy 1.27 -0.508) (xy 0.762 0.508) (xy 0.254 -0.508) (xy -0.254 0.508)
+						(xy -0.762 -0.508) (xy -1.27 0.508) (xy -1.524 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "nixie_clock_hv-altium-import:+5V_BAR"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name '+5V'"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_BAR_0_0"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0)
+					(hide yes)
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "nixie_clock_hv-altium-import:GND_POWER_GROUND"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'GND'"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_POWER_GROUND_0_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "nixie_clock_hv-altium-import:HV_BAR"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "HV"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'HV'"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "HV_BAR_0_0"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0)
+					(hide yes)
+					(name "HV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "${PRJ_NAME}"
+		(exclude_from_sim no)
+		(at 309.88 267.7922 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "105c1980-4fcb-4ed6-87dc-3f484eac33b4")
+	)
+	(text "Desc:"
+		(exclude_from_sim no)
+		(at 303.53 270.3322 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "116918a4-e866-487b-b74d-7d31302b9b90")
+	)
+	(text "${PRJ_LICENSE}"
+		(exclude_from_sim no)
+		(at 312.42 286.8422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "21823199-b1db-4c4d-9644-200cd8ea938b")
+	)
+	(text "Date:"
+		(exclude_from_sim no)
+		(at 303.53 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2bb5677c-9973-4bb2-9139-91188dc56538")
+	)
+	(text "${##}"
+		(exclude_from_sim no)
+		(at 356.87 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c93c2d6-8009-47a6-8ada-2cdd76c17c27")
+	)
+	(text "A3"
+		(exclude_from_sim no)
+		(at 382.27 290.6522 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "46224982-7e14-406d-9832-dbe1067be1c7")
+	)
+	(text "Size:"
+		(exclude_from_sim no)
+		(at 377.19 287.0962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4cf8439d-99ea-4beb-954e-16982ad802d8")
+	)
+	(text "Rev:"
+		(exclude_from_sim no)
+		(at 341.63 289.3822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5823f01f-ec40-4b62-b14f-da0b26477b97")
+	)
+	(text "${PRJ_NAME_LONG}"
+		(exclude_from_sim no)
+		(at 309.88 272.8722 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "66a27972-d9ea-48d6-95ec-efb6997ac70e")
+	)
+	(text "License:"
+		(exclude_from_sim no)
+		(at 303.53 286.8422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a514aee-744f-4ef8-b502-d8abc2a64169")
+	)
+	(text "${PRJ_HW_VER}"
+		(exclude_from_sim no)
+		(at 361.95 290.6522 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e01677b-d6e5-45c1-adf7-242cb29b3031")
+	)
+	(text "Sheet"
+		(exclude_from_sim no)
+		(at 341.63 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7eb2885b-fd69-4b4c-abce-2b02ce88d54c")
+	)
+	(text "${FILENAME}"
+		(exclude_from_sim no)
+		(at 309.88 289.3822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82062bd5-4d2d-4b9c-ae54-62d3f12af5c0")
+	)
+	(text "${CURRENT_DATE}"
+		(exclude_from_sim no)
+		(at 309.245 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97604063-d81f-4f98-85b1-7441fc187cd9")
+	)
+	(text "Variant:"
+		(exclude_from_sim no)
+		(at 360.68 276.6822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ade74c6-debc-42d8-9d8d-d4b3dd67172b")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 349.25 289.3822 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f96fefd-e341-40de-9ed6-5c8e807b0b2f")
+	)
+	(text "${PRJ_STATUS}"
+		(exclude_from_sim no)
+		(at 363.22 284.3022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "af52ea74-21d9-4b06-b11b-89658c70883d")
+	)
+	(text "${#}"
+		(exclude_from_sim no)
+		(at 348.615 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af631ec0-5597-4cc2-ab5c-ba24881d959d")
+	)
+	(text "Ing. Daniele Basile"
+		(exclude_from_sim no)
+		(at 317.5 279.2222 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "be22d497-7e83-4f6a-bb86-54e99806c995")
+	)
+	(text "asterix24@gmail.com"
+		(exclude_from_sim no)
+		(at 315.446 283.0322 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left bottom)
+		)
+		(uuid "c837cc7e-433a-42d7-a1bf-9b95a06bc109")
+	)
+	(text "${VARIANTNAME}"
+		(exclude_from_sim no)
+		(at 363.22 279.2222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9e8616f-c9e9-4e27-9e1e-e0426b2e25c8")
+	)
+	(text "Time:"
+		(exclude_from_sim no)
+		(at 319.405 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb39f61f-c1e5-4ad0-bc53-ecd9fbbe84ad")
+	)
+	(text "Project:"
+		(exclude_from_sim no)
+		(at 303.53 265.2522 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "daccc43c-e03a-4de5-8865-35c86144f06d")
+	)
+	(text "Title:"
+		(exclude_from_sim no)
+		(at 303.53 258.9022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc46b17b-dc93-457f-bdcf-a741c937a04a")
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 306.07 262.7122 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc7f6b40-59fd-4706-88ca-cd367eea9497")
+	)
+	(text "File:"
+		(exclude_from_sim no)
+		(at 303.53 289.3822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7600de2-02e5-4537-84c4-fc88ba319bd0")
+	)
+	(text "Prj Rev:"
+		(exclude_from_sim no)
+		(at 361.95 286.8422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e88caaa8-eb81-40a2-b387-7365288a9982")
+	)
+	(text "Status:"
+		(exclude_from_sim no)
+		(at 361.95 281.7622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9769093-ec0e-488a-b9ac-0665cc3c0128")
+	)
+	(text "of"
+		(exclude_from_sim no)
+		(at 351.79 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f30c7006-70e0-4e77-aa7d-dd2d0ada7294")
+	)
+	(text "${CURRENTTIME}"
+		(exclude_from_sim no)
+		(at 325.755 291.9222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f33c3947-d81a-4436-997c-037f8faf333d")
+	)
+	(junction
+		(at 91.44 98.8822)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3738d23-ad1b-4c89-b9af-2751d6a4f2d9")
+	)
+	(junction
+		(at 78.74 96.3422)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f87b8e73-50e0-4c6f-b5c8-58892543a3c6")
+	)
+	(wire
+		(pts
+			(xy 91.44 98.8822) (xy 96.52 98.8822)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e7542ad-5837-4df2-b85e-eff854ddcb1f")
+	)
+	(polyline
+		(pts
+			(xy 360.68 279.2222) (xy 388.62 279.2222)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "197d8e54-9cc1-4cd5-9708-3ce080fdd16f")
+	)
+	(polyline
+		(pts
+			(xy 302.26 256.3622) (xy 302.26 277.9522)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "1e24fa2a-d403-4a0d-b5df-442a39cf0417")
+	)
+	(wire
+		(pts
+			(xy 78.74 96.3422) (xy 78.74 98.8822)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21febe5e-e92c-4477-98da-89274be2d29e")
+	)
+	(polyline
+		(pts
+			(xy 360.68 291.9222) (xy 360.68 274.1422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "33da4c1e-e385-4320-9de6-f13ad3399df7")
+	)
+	(polyline
+		(pts
+			(xy 388.62 256.3622) (xy 302.26 256.3622)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "446ae9a3-bbd1-4b17-bdca-6ecca70d9184")
+	)
+	(polyline
+		(pts
+			(xy 388.62 262.7122) (xy 302.26 262.7122)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "4843c093-8880-462a-b50e-ee7ed3d3ab48")
+	)
+	(wire
+		(pts
+			(xy 78.74 96.3422) (xy 66.04 96.3422)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5918e436-56a6-430d-9328-4a5f0dfa9bad")
+	)
+	(polyline
+		(pts
+			(xy 302.26 262.7122) (xy 302.26 286.8422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "5a6829b3-e89d-4b93-aab8-678461b6bbc5")
+	)
+	(wire
+		(pts
+			(xy 96.52 96.3422) (xy 78.74 96.3422)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b70ed63-6e81-4b10-adf1-0a577e86536b")
+	)
+	(wire
+		(pts
+			(xy 86.36 98.8822) (xy 86.36 88.7222)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73565844-00e0-460e-9970-9cc3ebd30b66")
+	)
+	(wire
+		(pts
+			(xy 91.44 98.8822) (xy 86.36 98.8822)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7afc2270-1397-4a5c-adec-fb8ee3d4d315")
+	)
+	(polyline
+		(pts
+			(xy 360.68 289.3822) (xy 302.26 289.3822)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "90654ca8-14c4-4b3a-a9f3-50c015b07f24")
+	)
+	(polyline
+		(pts
+			(xy 360.68 284.3022) (xy 302.26 284.3022)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "914e656e-20a2-4db8-9468-1aaaee1faf1c")
+	)
+	(polyline
+		(pts
+			(xy 376.682 284.3022) (xy 376.682 291.9222)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "941561c2-09c5-4cc8-a2f8-c7d592dd8360")
+	)
+	(polyline
+		(pts
+			(xy 302.26 267.7922) (xy 302.26 293.1922)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "9b0f00b0-42b2-4877-be5b-786bd8e8a578")
+	)
+	(polyline
+		(pts
+			(xy 388.62 267.7922) (xy 302.26 267.7922)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "a61508c4-7b58-4d87-8fe7-befdf97f7cc7")
+	)
+	(polyline
+		(pts
+			(xy 388.62 274.1422) (xy 302.26 274.1422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ab23ae56-317f-4826-975a-88961b7fc57e")
+	)
+	(polyline
+		(pts
+			(xy 360.68 284.3022) (xy 388.62 284.3022)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "ae8610f9-0175-4dd1-970f-7fe995a3b602")
+	)
+	(polyline
+		(pts
+			(xy 302.26 286.8422) (xy 360.68 286.8422)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "c9857424-eeed-4755-9e0f-195097575d4e")
+	)
+	(wire
+		(pts
+			(xy 86.36 88.7222) (xy 68.58 88.7222)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d30b8630-4efb-4118-8f95-dd3e366e6cb4")
+	)
+	(wire
+		(pts
+			(xy 121.92 96.3422) (xy 132.08 96.3422)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbd5d7b6-1c4a-4fb4-b45e-4d63b7cde17b")
+	)
+	(polyline
+		(pts
+			(xy 340.36 286.8422) (xy 340.36 291.9222)
+		)
+		(stroke
+			(width 0.0254)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "fe1ccba6-d338-4a21-983c-8624b0724754")
+	)
+	(hierarchical_label "HV_ENABLE"
+		(shape passive)
+		(at 68.58 88.7222 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d14162f0-ef3e-4d49-ac01-abd21e4f2b7b")
+	)
+	(symbol
+		(lib_id "nixie_clock_hv-altium-import:GND_POWER_GROUND")
+		(at 114.3 111.5822 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1957854a-0f92-4984-9fe6-00d7556a7ad2")
+		(property "Reference" "#PWR?"
+			(at 114.3 111.5822 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 117.9322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 111.5822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 111.5822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 111.5822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "ab95d9e7-8fc4-42a9-bcc8-937a88bbf40c")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nixie_clock_hv-altium-import:GND_POWER_GROUND")
+		(at 78.74 103.9622 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2bf47611-05d6-4c23-a5a4-b5b1afb33195")
+		(property "Reference" "#PWR?"
+			(at 78.74 103.9622 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 110.3122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 103.9622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 103.9622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 103.9622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "e7f3b070-047f-4297-9d2f-f8ae921f8358")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "develer_generic:Power_0_Cap_develer_generic.schlib")
+		(at 66.04 100.1522 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2eb2aef2-1d23-4901-8923-bca6c4f4ca50")
+		(property "Reference" "C35"
+			(at 68.326 101.1682 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 68.326 103.7082 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "0603_[1608]"
+			(at 66.04 100.1522 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 100.1522 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 66.04 100.1522 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "REVISION" ""
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ALTIUM_VALUE" "${VALUE}"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER PN" "*"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER" "*"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "MOUNTTECHNOLOGY" "*"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "CODE DEVELER" "*"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "COMPONENTLINK1DESCRIPTION" "New link"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "COMPONENTLINK1URL" "*"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION" "*"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION 2" "*"
+			(at 63.754 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(pin "1"
+			(uuid "96d33eb2-8042-4a78-a34f-de1d1dfcf900")
+		)
+		(pin "2"
+			(uuid "71dc72f7-0caa-466c-a8bb-ae15b76bc8e5")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nixie_clock_hv-altium-import:HV_BAR")
+		(at 132.08 96.3422 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "35637ca6-4030-49eb-a416-3242f47b70f7")
+		(property "Reference" "#PWR?"
+			(at 132.08 96.3422 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HV"
+			(at 132.08 92.5322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "44a43ab3-e40e-4fcb-a6e2-2cadf40e259c")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "develer_generic:Power_0_Res_develer_generic.schlib_0")
+		(at 91.44 103.9622 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3bfd6533-eecf-4b3b-b42d-9d8561d0da88")
+		(property "Reference" "R53"
+			(at 92.202 103.7082 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 92.202 106.2482 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "0603_[1608]"
+			(at 91.44 103.9622 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 103.9622 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 91.44 103.9622 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PUBLISHER" "Develer srl"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ALTIUM_VALUE" ""
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "REVISION" "0.1"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER PN" "*"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER" "*"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "MOUNTTECHNOLOGY" "SMT"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "CODE DEVELER" "*"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION" "*"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION 2" "*"
+			(at 90.678 98.3742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(pin "1"
+			(uuid "11e04576-f5fa-4d8c-ba5b-b98b64ac096f")
+		)
+		(pin "2"
+			(uuid "826eac53-cb85-4774-b144-f5fc60b77ee2")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nixie_clock_hv-altium-import:GND_POWER_GROUND")
+		(at 91.44 109.0422 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "54010424-df09-42ae-81ae-b8d0f2a35888")
+		(property "Reference" "#PWR?"
+			(at 91.44 109.0422 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 115.3922 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 109.0422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 109.0422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 109.0422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "ba4650f4-ae51-41c4-84f4-da334b7f13ee")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nixie_clock_hv-altium-import:+5V_BAR")
+		(at 78.74 96.3422 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "adad0334-c7ea-4ee3-a255-60de2f80b95f")
+		(property "Reference" "#PWR?"
+			(at 78.74 96.3422 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 78.74 92.5322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "d368259f-c165-4a86-b99d-5eb2f5a36697")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nixie_clock_hv-altium-import:GND_POWER_GROUND")
+		(at 66.04 103.9622 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af62742f-3b4d-403d-a4ea-df566e82a085")
+		(property "Reference" "#PWR?"
+			(at 66.04 103.9622 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 110.3122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 103.9622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 103.9622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 103.9622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "da07da05-d5b7-4bc7-b511-0782c9787283")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "develer_generic:Power_0_Cap_develer_generic.schlib")
+		(at 78.74 100.1522 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4ef15d1-0aaf-4ebf-bad2-a01738b2702e")
+		(property "Reference" "C36"
+			(at 81.026 101.1682 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 81.026 103.7082 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "0603_[1608]"
+			(at 78.74 100.1522 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 100.1522 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 78.74 100.1522 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "REVISION" ""
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ALTIUM_VALUE" "${VALUE}"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER PN" "*"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER" "*"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "MOUNTTECHNOLOGY" "*"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "CODE DEVELER" "*"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "COMPONENTLINK1DESCRIPTION" "New link"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "COMPONENTLINK1URL" "*"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION" "*"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION 2" "*"
+			(at 76.454 95.8342 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(pin "1"
+			(uuid "55e4b11d-4b44-484b-8de0-08ed2e71935f")
+		)
+		(pin "2"
+			(uuid "dcd40f4d-9b65-4bff-8890-47db33a16cd8")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "develer_components:Power_0_BootModule_3-9V_170V_develer_components.SchLib")
+		(at 109.22 102.6922 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ea10b476-e2fe-4448-85e7-6e87dc9f7349")
+		(property "Reference" "U26"
+			(at 100.33 93.8022 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "BootModule_3-9V_170V"
+			(at 100.33 89.9922 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "BoostModule"
+			(at 109.22 102.6922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 102.6922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "som boot power supply 3-9V to 170V"
+			(at 109.22 102.6922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PUBLISHER" "Develer srl"
+			(at 106.172 104.4702 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "ALTIUM_VALUE" ""
+			(at 106.172 104.4702 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "REVISION" "0.1"
+			(at 106.172 104.4702 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER PN" "*"
+			(at 107.95 111.0742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE MANUFACTURER" "*"
+			(at 107.95 111.0742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "MOUNTTECHNOLOGY" "SMT"
+			(at 107.95 111.0742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "CODE DEVELER" "*"
+			(at 107.95 111.0742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION" "*"
+			(at 107.95 111.0742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "NOTE DESCRIPTION 2" "*"
+			(at 107.95 111.0742 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(pin "2"
+			(uuid "bea2bcff-c81c-4fdd-b8e8-97f8aebe678b")
+		)
+		(pin "1"
+			(uuid "68fffcb7-b726-43a3-bced-c151051b3dff")
+		)
+		(pin "3"
+			(uuid "b4143b0f-51b7-4a5b-880a-79eaaaf25a5b")
+		)
+		(pin "4"
+			(uuid "8d738008-3fac-423b-8780-3797f3daf462")
+		)
+		(pin "5"
+			(uuid "aa1afeec-0b05-4581-bd82-60a6b19a7562")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "U26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nixie_clock_hv-altium-import:GND_POWER_GROUND")
+		(at 104.14 111.5822 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f2219c62-3ff3-417e-a55c-793e72528038")
+		(property "Reference" "#PWR?"
+			(at 104.14 111.5822 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 117.9322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 111.5822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 111.5822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 111.5822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "7710c9b5-204a-41f6-abf9-812acb6e444c")
+		)
+		(instances
+			(project "nixie_clock_hv"
+				(path "/7d019890-e370-4211-95ee-c805f40ef912/e03978ec-08d4-4a66-9e0f-789ac11c9318/87e3bb59-f79a-4ca5-b9ef-6042bdef0f32"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
