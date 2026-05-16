@@ -13,3 +13,4 @@ My personal nixi clock with RP2040 Raspberry pico Zero
 - Ambient lighting sensor
 - Temperature sensor
 - DHT11 Sensor
+- FM Radio with SkyLab chip
