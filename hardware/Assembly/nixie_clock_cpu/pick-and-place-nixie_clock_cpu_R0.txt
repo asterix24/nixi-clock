@@ -1,12 +1,12 @@
 Altium Designer Pick and Place Locations
-C:\Users\Asterix\Documents\github\nixe_clock\Assembly\nixie_clock_cpu\pick-and-place-nixie_clock_cpu_R0.txt
+C:\Users\asterix\Documents\github\nixi-clock\hardware\Assembly\nixie_clock_cpu\pick-and-place-nixie_clock_cpu_R0.txt
 
 ========================================================================================================================
 File Design Information:
 
-Date:       19/02/23
-Time:       16:51
-Revision:   Not in VersionControl
+Date:       16/05/26
+Time:       23:41
+Revision:   3b24540109dd8d9c76b9ee09bc40436280486604
 Variant:    No variations
 Units used: mm
 

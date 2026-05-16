@@ -1,0 +1,100 @@
+Altium Designer Pick and Place Locations
+C:\Users\asterix\Documents\github\nixi-clock\hardware\Assembly\nixie_clock_hv\pick-and-place-nixie_clock_hv_R1.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       16/05/26
+Time:       23:46
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator        Comment                          Layer       Footprint             Center-X(mm) Center-Y(mm) Rotation Description                                           
+"J3_ xx:xM_xx:xM" NIXIE_TUBE_SOCKET_14PIN_31MM_THD BottomLayer SOCKET_NIXI_TUBE      52.4839      0.0634       180      ""                                                    
+"J3_ xx:xM_xx:Mx" NIXIE_TUBE_SOCKET_14PIN_31MM_THD BottomLayer SOCKET_NIXI_TUBE      18.0000      0.0494       180      ""                                                    
+"J3_ xx:xM_xH:xx" NIXIE_TUBE_SOCKET_14PIN_31MM_THD BottomLayer SOCKET_NIXI_TUBE      -18.0000     0.0494       180      ""                                                    
+"J3_ xx:xM_Hx:xx" NIXIE_TUBE_SOCKET_14PIN_31MM_THD BottomLayer SOCKET_NIXI_TUBE      -52.5000     0.0494       180      ""                                                    
+R31               33R                              TopLayer    0603_[1608]           7.2498       -36.0000     180      Resistor                                              
+P3                ENCODER                          TopLayer    HEADER_2X3_2.54MM_THD 52.5000      -38.7500     180      "Header, 3-Pin, Dual row"                             
+P1                POWER                            TopLayer    HEADER_2X3_2.54MM_THD -52.5000     -38.7500     180      "Header, 3-Pin, Dual row"                             
+C5                100nF                            TopLayer    0603_[1608]           -29.3502     -37.2500     180      Capacitor                                             
+R2                10k                              TopLayer    0603_[1608]           -65.2500     -33.2498     90       Resistor                                              
+R1                10k                              TopLayer    0603_[1608]           -60.2500     -32.9998     90       Resistor                                              
+Q1                BSS138                           TopLayer    SOT-23                -62.7500     -33.0000     180      "N-MOSFET 50V 0,22A"                                  
+U7                BootModule_3-9V_170V             BottomLayer BOOSTMODULE           0.0200       -26.7662     90       "som boot power supply 3-9V to 170V"                  
+U6                SN74HC595D                       TopLayer    soic16                36.7500      -34.5000     270      "8-Bit Shift Registers With 3-State Output Registers" 
+U23               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  57.1653      2.6071       30       "Adressable Led RGB 1wire"                            
+U19               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  22.6653      2.6071       30       "Adressable Led RGB 1wire"                            
+U11               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  -47.8348     2.6071       30       "Adressable Led RGB 1wire"                            
+U15               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  -13.3348     2.6071       30       "Adressable Led RGB 1wire"                            
+U22               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  47.8668      2.6750       150      "Adressable Led RGB 1wire"                            
+U18               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  13.3668      2.6750       150      "Adressable Led RGB 1wire"                            
+U10               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  -57.1332     2.6750       150      "Adressable Led RGB 1wire"                            
+U14               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  -22.6332     2.6750       150      "Adressable Led RGB 1wire"                            
+U21               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  52.5000      -5.2929      270      "Adressable Led RGB 1wire"                            
+U17               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  18.0000      -5.2929      270      "Adressable Led RGB 1wire"                            
+U9                WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  -52.5000     -5.2929      270      "Adressable Led RGB 1wire"                            
+U13               WS2812                           BottomLayer LED_PLCC_RGB_4P_1010  -18.0000     -5.2929      270      "Adressable Led RGB 1wire"                            
+U5                SN74HC595D                       TopLayer    soic16                -37.0000     -34.5000     270      "8-Bit Shift Registers With 3-State Output Registers" 
+U20               K155ID1                          TopLayer    DIP-16_THD            52.5000      -25.5000     90       "Nixie Tube HV Driver"                                
+U16               K155ID1                          TopLayer    DIP-16_THD            21.0000      -25.5000     90       "Nixie Tube HV Driver"                                
+U8                K155ID1                          TopLayer    DIP-16_THD            -52.5000     -25.5000     90       "Nixie Tube HV Driver"                                
+U12               K155ID1                          TopLayer    DIP-16_THD            -21.0000     -25.4116     90       "Nixie Tube HV Driver"                                
+U4                WS2812D                          BottomLayer R5_RGB_LED_THD        35.2500      -13.0002     90       "Adressable Led RGB 1wire, THD"                       
+U3                WS2812D                          BottomLayer R5_RGB_LED_THD        0.0002       13.0000      180      "Adressable Led RGB 1wire, THD"                       
+U2                WS2812D                          BottomLayer R5_RGB_LED_THD        0.0000       -12.9999     270      "Adressable Led RGB 1wire, THD"                       
+U1                WS2812D                          BottomLayer R5_RGB_LED_THD        -35.2500     -13.0002     90       "Adressable Led RGB 1wire, THD"                       
+R26               10k                              TopLayer    0603_[1608]           9.9998       -36.0000     180      Resistor                                              
+R25               1k                               TopLayer    0603_[1608]           19.7500      -33.0002     270      Resistor                                              
+R24               1k                               TopLayer    0603_[1608]           27.5000      -33.0002     270      Resistor                                              
+R23               1k                               TopLayer    0603_[1608]           24.7500      -33.0002     270      Resistor                                              
+R22               1k                               TopLayer    0603_[1608]           17.2500      -33.0002     270      Resistor                                              
+R21               1k                               TopLayer    0603_[1608]           51.2500      -33.0002     270      Resistor                                              
+R20               1k                               TopLayer    0603_[1608]           58.7500      -33.0002     270      Resistor                                              
+R19               1k                               TopLayer    0603_[1608]           56.2500      -33.0002     270      Resistor                                              
+R18               1k                               TopLayer    0603_[1608]           48.7500      -33.0002     270      Resistor                                              
+R8                10k                              TopLayer    0603_[1608]           -65.2500     -36.2502     270      Resistor                                              
+R7                10k                              TopLayer    0603_[1608]           -60.2500     -36.4998     90       Resistor                                              
+R17               1k                               TopLayer    0603_[1608]           -53.7500     -33.0002     270      Resistor                                              
+R16               1k                               TopLayer    0603_[1608]           -46.2500     -33.0002     270      Resistor                                              
+R15               1k                               TopLayer    0603_[1608]           -48.7500     -33.0002     270      Resistor                                              
+R14               1k                               TopLayer    0603_[1608]           -56.2500     -33.0002     270      Resistor                                              
+R13               10k                              TopLayer    0603_[1608]           -40.7502     -39.9012     180      Resistor                                              
+R12               1k                               TopLayer    0603_[1608]           -22.2500     -33.0002     270      Resistor                                              
+R11               1k                               TopLayer    0603_[1608]           -14.7500     -33.0002     270      Resistor                                              
+R10               1k                               TopLayer    0603_[1608]           -17.2500     -33.0002     270      Resistor                                              
+R9                1k                               TopLayer    0603_[1608]           -24.7500     -33.0002     270      Resistor                                              
+R30               22k                              BottomLayer AXIAL_10mm            41.0549      13.5000      45       Resistor                                              
+R29               22k                              BottomLayer AXIAL_10mm            30.5000      13.5000      135      Resistor                                              
+R27               22k                              BottomLayer AXIAL_10mm            -40.7079     13.5079      135      Resistor                                              
+R28               22k                              BottomLayer AXIAL_10mm            -30.0000     13.5000      45       Resistor                                              
+R6                75R                              TopLayer    0603_[1608]           -65.2500     -30.5002     270      Resistor                                              
+R5                75R                              TopLayer    0603_[1608]           -1.2038      10.7834      0        Resistor                                              
+R4                75R                              TopLayer    0603_[1608]           0.7498       -8.3384      180      Resistor                                              
+R3                75R                              TopLayer    0603_[1608]           -34.0000     -17.4928     270      Resistor                                              
+Q2                BSS138                           TopLayer    SOT-23                -62.7500     -36.5000     180      "N-MOSFET 50V 0,22A"                                  
+P2                DATA                             TopLayer    HEADER_2X3_2.54MM_THD 0.0000       -38.7500     180      "Header, 3-Pin, Dual row"                             
+C8                100nF                            TopLayer    0603_[1608]           12.0461      -33.8365     90       Capacitor                                             
+C7                10uF                             TopLayer    0603_[1608]           13.2961      -33.8365     90       Capacitor                                             
+C6                100nF                            TopLayer    0603_[1608]           44.2498      -37.5000     180      Capacitor                                             
+C24               100nF                            TopLayer    0603_[1608]           52.5000      -5.2931      270      Capacitor                                             
+C20               100nF                            TopLayer    0603_[1608]           18.0000      -5.2931      270      Capacitor                                             
+C12               100nF                            TopLayer    0603_[1608]           -52.5000     -5.2931      270      Capacitor                                             
+C16               100nF                            TopLayer    0603_[1608]           -18.0000     -5.2931      270      Capacitor                                             
+C23               100nF                            TopLayer    0603_[1608]           47.8666      2.6751       150      Capacitor                                             
+C19               100nF                            TopLayer    0603_[1608]           13.3666      2.6751       150      Capacitor                                             
+C11               100nF                            TopLayer    0603_[1608]           -57.1334     2.6751       150      Capacitor                                             
+C15               100nF                            TopLayer    0603_[1608]           -22.6334     2.6751       150      Capacitor                                             
+C22               100nF                            TopLayer    0603_[1608]           57.1654      2.6072       30       Capacitor                                             
+C18               100nF                            TopLayer    0603_[1608]           22.6654      2.6072       30       Capacitor                                             
+C10               100nF                            TopLayer    0603_[1608]           -47.8346     2.6072       30       Capacitor                                             
+C14               100nF                            TopLayer    0603_[1608]           -13.3346     2.6072       30       Capacitor                                             
+C21               100nF                            TopLayer    0603_[1608]           53.7500      -32.9998     90       Capacitor                                             
+C17               100nF                            TopLayer    0603_[1608]           22.2500      -32.9998     90       Capacitor                                             
+C9                100nF                            TopLayer    0603_[1608]           -51.2500     -32.9998     90       Capacitor                                             
+C13               100nF                            TopLayer    0603_[1608]           -19.7500     -32.9114     90       Capacitor                                             
+C4                100nF                            TopLayer    0603_[1608]           37.7500      -13.0150     270      Capacitor                                             
+C3                100nF                            TopLayer    0603_[1608]           -0.0548      15.3655      0        Capacitor                                             
+C2                100nF                            TopLayer    0603_[1608]           3.0000       -16.4130     270      Capacitor                                             
+C1                100nF                            TopLayer    0603_[1608]           -32.8900     -12.9928     270      Capacitor                                             
